@@ -13,6 +13,6 @@ public class Hook extends Browsers {
 
 @After
     public void tearDown(){
-    closeBrowser();
+    //closeBrowser();
 }
 }

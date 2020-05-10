@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>10 May 2020, 15:50</td>
+      <td>10 May 2020, 17:54</td>
     </tr>
   </tbody>
 </table>
@@ -138,7 +138,7 @@ $(document).ready(function() {
           <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="17322954800">17.322</td>
+          <td class="duration" data-value="12722315300">12.722</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -191,7 +191,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">17.322</span>
+  <span class="lead-duration duration">12.722</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
@@ -229,7 +229,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">Hook.setup()</span>
 
-  <span class="lead-duration duration">7.251</span>
+  <span class="lead-duration duration">7.378</span>
 
           </div>
 
@@ -266,7 +266,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">i navegiate to bbcnews homepage</span>
 
-  <span class="lead-duration duration">2.257</span>
+  <span class="lead-duration duration">3.034</span>
 
 </div>
 
@@ -293,7 +293,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">i click on show more update button</span>
 
-  <span class="lead-duration duration">15.065</span>
+  <span class="lead-duration duration">9.687</span>
 
 </div>
 
@@ -308,35 +308,20 @@ $(document).ready(function() {
           <a>org.openqa.selenium.NoSuchElementException:</a>
       </div>
       <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#u5077640793820864 &gt; div &gt; div.gel-layout.gel-layout--center.gs-u-pt\+\+.lx-stream-wrapper-heading &gt; div &gt; div &gt; div.lx-stream__show-more.lx-stream-show-more &gt; button&quot;}
-  (Session info: chrome=81.0.4044.138)
+        <pre>org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//*[@id=&quot;u701459830155116&quot;]/div/div[2]/div/div/div[2]/button
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOPZONE', ip: '192.168.0.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: C:\Users\shaikh\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58801}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: e56d92730a1c1d642a536794ee426e62
-*** Element info: {Using=css selector, value=#u5077640793820864 &gt; div &gt; div.gel-layout.gel-layout--center.gs-u-pt\+\+.lx-stream-wrapper-heading &gt; div &gt; div &gt; div.lx-stream__show-more.lx-stream-show-more &gt; button}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy19.click(Unknown Source)
-	at co.ukbbc.pages.HomePage.clickOnMoreUpdateButton(HomePage.java:22)
-	at co.ukbbc.stepDefinitions.ShowMoreUpdateNewsSteps.i_click_on_show_more_update_button(ShowMoreUpdateNewsSteps.java:23)
+	at co.ukbbc.pages.HomePage.clickOnMoreUpdateButton(HomePage.java:24)
+	at co.ukbbc.stepDefinitions.ShowMoreUpdateNewsSteps.i_click_on_show_more_update_button(ShowMoreUpdateNewsSteps.java:24)
 	at &#10045;.i click on show more update button(file:src/test/java/co/ukbbc/features/CustomerCanViewUpToDateNews.feature:9)
 </pre>
       </div>
@@ -433,7 +418,7 @@ Session ID: e56d92730a1c1d642a536794ee426e62
             <span class="keyword indention">After</span>
               <span class="location name">Hook.tearDown()</span>
 
-  <span class="lead-duration duration">1.063</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 

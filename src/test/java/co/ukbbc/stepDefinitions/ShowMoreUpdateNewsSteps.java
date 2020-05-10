@@ -20,12 +20,13 @@ public class ShowMoreUpdateNewsSteps extends BasePage {
 
     @When("i click on show more update button")
     public void i_click_on_show_more_update_button() {
+
         homePage.clickOnMoreUpdateButton();
     }
 
     @When("i click on the news link of my interest")
     public void i_click_on_the_news_link_of_my_interest() {
-
+        homePage.clickOnNewsLinks();
     }
 
     @Then("the news details are displayed")

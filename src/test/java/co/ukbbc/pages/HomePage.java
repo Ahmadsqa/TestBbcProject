@@ -12,21 +12,26 @@ public class HomePage extends BasePage{
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(css = "#u5077640793820864 > div > div.gel-layout.gel-layout--center.gs-u-pt\\+\\+.lx-stream-wrapper-heading > div > div > div.lx-stream__show-more.lx-stream-show-more > button")
-    private WebElement showMoreUpdatebutton;
+    @FindBy(xpath = "//*[@id=\"u701459830155116\"]/div/div[2]/div/div/div[2]/button")
+    private WebElement showMoreUpdateButton;
 
-    @FindBy (css = "#sty_51506729 > header > div > h3 > a > span")
+    @FindBy (xpath = "//*[@id=\"sty_51506729\"]/header/div/h3/a/span")
     private WebElement newsLinks;
 
     public void clickOnMoreUpdateButton(){
-    showMoreUpdatebutton.click();
-}
-    //    public HomePage clickOnMoreUpdateButton(){
-//        showMoreUpdatebutton.click();
+
+        ScrollByPixel();
+        showMoreUpdateButton.click();
+    }
+
+//      public HomePage clickOnMoreUpdateButton(){
+//        ScrollByPixel();
+//          showMoreUpdateButton.click();
 //        return new HomePage(driver);
 //    }
 
     public NewsDetailsPage clickOnNewsLinks(){
+
         newsLinks.click();
         return new NewsDetailsPage(driver);
     }
